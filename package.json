@@ -1,0 +1,20 @@
+{
+  "name": "f2link",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "create-db": "wrangler d1 create f2link",
+    "init-db": "wrangler d1 execute f2link --file=./schema.sql --remote",
+    "set-webhook": "curl -F \"url=https://f2link.<<YOUR_SUBDOMAIN>>.workers.dev/webhook\" https://api.telegram.org/bot$BOT_TOKEN/setWebhook"
+  },
+  "dependencies": {
+    "telegraf": "^4.19.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241112.0",
+    "typescript": "^5.6.0",
+    "wrangler": "^3.80.0"
+  }
+}
