@@ -12,6 +12,13 @@ CREATE TABLE IF NOT EXISTS stats (
     downloads INTEGER DEFAULT 0
 );
 
+CREATE TABLE IF NOT EXISTS rate_limits (
+    ip TEXT NOT NULL,
+    ts REAL NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_rate_ip_ts ON rate_limits(ip, ts);
+
 CREATE TABLE IF NOT EXISTS counter (
     id INTEGER PRIMARY KEY CHECK (id = 1),
     value INTEGER

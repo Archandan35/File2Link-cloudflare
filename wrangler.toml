@@ -1,4 +1,4 @@
-name = "f2link"
+name = "file2link"
 main = "src/index.ts"
 compatibility_date = "2024-11-01"
 compatibility_flags = ["nodejs_compat"]
@@ -6,4 +6,15 @@ compatibility_flags = ["nodejs_compat"]
 [[d1_databases]]
 binding = "DB"
 database_name = "f2link"
-database_id = "YOUR_DATABASE_ID_HERE"
+database_id = "c992b7f3-afe6-4d57-a1cd-7e45d071db78"
+
+[vars]
+BASE_URL = "https://file2link.chandankumar-mmt.workers.dev"
+CHANNEL_ID = "-1003912790571"
+MY_USER_ID = "5762680378"
+WEBHOOK_SECRET = "Z4xQ1w7LmNp8RsTyUv9AbCdEfGhIjKlMn"
+BOT_TOKEN = "8646945093:AAH5-cYiEL5nqb_QluUcLvmLnVxe-ftlTug"
+SECRET_KEY = "8E4wH7nQmL2Pz9XvK5sR1YcA6fJ8UdNe3BgTqW0MhLpVxZk2"
+
+[triggers]
+crons = ["0 */6 * * *"]
