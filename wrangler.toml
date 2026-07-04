@@ -6,7 +6,7 @@ compatibility_flags = ["nodejs_compat"]
 [[d1_databases]]
 binding = "DB"
 database_name = "f2link"
-database_id = "YOUR_DATABASE_ID_HERE"
+database_id = "3787a4ee-2ffd-41bc-bbf9-e428c81bcf70"
 
 [triggers]
 crons = ["0 */6 * * *"]
