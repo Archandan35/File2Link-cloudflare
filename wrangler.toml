@@ -1,0 +1,12 @@
+name = "f2link"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "f2link"
+database_id = "YOUR_DATABASE_ID_HERE"
+
+[triggers]
+crons = ["0 */6 * * *"]
