@@ -18,3 +18,4 @@ SECRET_KEY = "8E4wH7nQmL2Pz9XvK5sR1YcA6fJ8UdNe3BgTqW0MhLpVxZk2"
 
 [triggers]
 crons = ["0 */6 * * *"]
+a
